@@ -32,7 +32,8 @@ IndexFormer
 ---execute                          :code for executing task
 ---model                            :code of IndexFormer
 ---results                          :best checkpoints storage
-------best_checkpoints_tpch         :best checkpoint of TPC-H
+------cost
+---------best_checkpoints_tpch      :best checkpoint of TPC-H
 ---index_recommand.py               :code for index recommendation experiment
 ---run.py                           :Code of running trainging/evaluation task
 ---requirements.txt                 :python environment
@@ -46,7 +47,7 @@ IndexFormer
 
 ## Datasets and workloads.
 We mainly used 2 industrial benchmarks (TPC-H and TPC-DS) and a real dataset (IMDB).
-The first two have their own Workload generators, the latter we used JOB \(https://github.com/gregrahn/join-order-benchmark\) as a template to generate using a python script.
+The first two have their own Workload generators, the latter we used JOB \( https://github.com/gregrahn/join-order-benchmark \) as a template to generate using a python script.
 
 We generated a large number of queries and then used a python script to generate random index configurations for each query, creating the indexes and executing the query in OceanBase for real and fetching the time, which resulted in the final data-label set. We divide the set into 90% training set and 10% test set.
 

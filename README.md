@@ -8,7 +8,7 @@ This work originate from our CCF-Ant Database Fund project with OceanBase of Ant
 We encounter the following three problems sequentially when trying to index recommendations using reinforcement learning models:
 1. OceanBase does not have a What-if API-like tool to virtually create indexes and get new query plans and execution times.
 2. OceanBasse comes with an Explainer that has a large bias in estimating query plan execution times, and often does not give back new times for new plans after spending a lot of time creating indexes.
-3. Existing Cost prediction models, rarely index-aware, and it is difficult to deal with complex filters in query plan, such as nested logical operators (Or, And) or complex atomic predicates with function strings, etc., which are often found in query plans in modern DMBS especially OceanBase ().
+3. Existing Cost prediction models, rarely index-aware, and it is difficult to deal with complex filters in query plan, such as nested logical operators (Or, And) or complex atomic predicates with function strings, etc., which are often found in query plans in modern DMBS especially OceanBase.
 
 So we finally decide to design our own model that can fulfill our needs, resulting in IndexFormer.
 

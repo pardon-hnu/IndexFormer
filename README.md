@@ -1,5 +1,5 @@
 # IndexFormer
-This repository is created for paper "Index-aware attention-based cost estimation for complex filters" (Now Submitted to VLDB 2026)
+This repository is created for paper "Index-aware attention-based cost estimation for complex filters" (Now Submitted to ICDE 2026)
 
 ## Why we are doing this work? \(not just the MOTIVATION in the paper\)
 

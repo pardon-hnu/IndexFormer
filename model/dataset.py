@@ -233,13 +233,6 @@ class PlanTreeDataset(Dataset):
         root.query_id = idx
 
         root.feature = node2feature(root, encoding, self.hist_file, self.table_sample)
-        #    print(root)
-        # if 'Plans' in plan:
-        #     for subplan in plan['Plans']:
-        #         subplan['parent'] = plan
-        #         node = self.traversePlan(subplan, idx, encoding)
-        #         node.parent = root
-        #         root.addChild(node)
         pattern = re.compile(r'CHILD_\d+')
         for key, value in plan.items():
             if pattern.match(key):
